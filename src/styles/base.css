@@ -1,0 +1,20 @@
+
+/* Base styles */
+:root {
+  --accent: #8B5CF6;
+  --accent-soft: #D6BCFA;
+  --secondary: #F8F9FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+

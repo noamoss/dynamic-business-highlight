@@ -1,0 +1,82 @@
+
+/* Materials Section */
+.materials-section {
+  padding: 5rem 1rem;
+  background-color: var(--secondary);
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .materials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.material-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.material-card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.material-type {
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.material-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.material-card:hover h3 {
+  color: var(--accent);
+}
+
+.material-card p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.learn-more svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.material-card:hover .learn-more svg {
+  transform: translateX(4px);
+}
+

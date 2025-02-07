@@ -1,0 +1,46 @@
+
+/* Hero Section */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero-badge {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-title .accent {
+  color: var(--accent);
+}
+
+.hero-description {
+  color: #666;
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
